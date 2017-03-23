@@ -15,6 +15,8 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
+
+
 [image1]: ./examples/grayscale.jpg "Grayscale"
 
 ---
@@ -40,23 +42,33 @@ My pipeline consisted of following steps.
 
 Image is converted to gray, this is needed for edge detection.
 
-![Gray Scale][images/gray_scale.png]
+<img src="images/gray_scale.png" alt="Gray Scale Image" />
 
 **Apply Gaussian filter**
 
 This blurs the image and removes all the rough edges in the images, there by getting rid of noisy edges.
 
+<img src="images/blurred.png" alt="Blurred Image" />
+
 **Edge Detection**
 
 The various edges are detected using OpenCV's canny function.
+
+<img src="images/edge_detection.png" alt="Edge Detection" />
 
 **Region of Interest**
 
 A four sided polygon is selected, that effectively covers the whole lane view in front of the car. This reduces the area of the image that needs to be processed.
 
+<img src="images/region_of_interest.png" alt="Region of Interest" />
+
+
 **Hough Transform**
 
 Hough Transform detects the various lines in the image.
+
+<img src="images/hough_lines.png" alt="Hough Transform" />
+
 
 **Lane Lines**
 
@@ -67,10 +79,14 @@ The following actions are performed here
   * A Linear Regression is performed to find slope and intercept of the points.
   * A single line is fitted against the linear equation
   * While processing Video frames, the slope and intercept are running-averaged over last 20 frame's slope and intercept. This gives smoother slope/lines.
+  
+<img src="images/lane_markings.png" alt="Full Lane Lines" />
 
 **Overlay lanes lines**
 
 The lane lines are overlayed on top of the original image.
+
+<img src="images/final_processed_image.png" alt="Final Image" />
 
 **Save Image**
 
