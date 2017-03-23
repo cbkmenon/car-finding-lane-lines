@@ -13,17 +13,10 @@ The goals / steps of this project are the following:
 * Reflect on the approach
 
 
-[//]: # (Image References)
-
-
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
 
 ### Reflection
 
-###1. Pipeline.
+### 1. Pipeline
 
 My pipeline consisted of following steps.
 
@@ -35,7 +28,6 @@ My pipeline consisted of following steps.
 5. Hough Transform
 7. Lane Lines
 8. Overlay lanes lines
-9. Save File
 
 
 **Convert to grayscale**
@@ -79,7 +71,7 @@ The following actions are performed here
   * A Linear Regression is performed to find slope and intercept of the points.
   * A single line is fitted against the linear equation
   * While processing Video frames, the slope and intercept are running-averaged over last 20 frame's slope and intercept. This gives smoother slope/lines.
-  
+
 <img src="images/lane_markings.png" alt="Full Lane Lines" />
 
 **Overlay lanes lines**
@@ -88,20 +80,14 @@ The lane lines are overlayed on top of the original image.
 
 <img src="images/final_processed_image.png" alt="Final Image" />
 
-**Save Image**
-
-The lane-marked image is saved to disc.
-
-
-
-If you'd like to include images to show how the pipeline works, here is how to include an image:
 
 
 
 
 
 
-###2. Identify potential shortcomings with your current pipeline
+
+### Potential Shortcomings with current pipeline
 
 * The lines are not smooth for curved lanes.
 * The video processing needs to be tuned more and made smoother.
@@ -109,10 +95,7 @@ If you'd like to include images to show how the pipeline works, here is how to i
 
 
 
-Another shortcoming could be ...
-
-
-###3. Suggest possible improvements to your pipeline
+### Possible improvements
 
 * The top coordinates for lane marking can be made more smoother by averaging past coordinates.
 * Further tuning of Hough Transform parameters.
