@@ -40,6 +40,8 @@ My pipeline consisted of following steps.
 
 Image is converted to gray, this is needed for edge detection.
 
+![Gray Scale][images/gray_scale.png]
+
 **Apply Gaussian filter**
 
 This blurs the image and removes all the rough edges in the images, there by getting rid of noisy edges.
@@ -78,7 +80,9 @@ The lane-marked image is saved to disc.
 
 If you'd like to include images to show how the pipeline works, here is how to include an image:
 
-![alt text][image1]
+
+
+
 
 
 ###2. Identify potential shortcomings with your current pipeline
