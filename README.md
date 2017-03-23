@@ -1,8 +1,8 @@
-#**Finding Lane Lines on the Road**
+**Finding Lane Lines on the Road**
 
-##Project Description
+## Project Description
 
-###This is a project write up for finding lanes on the road as a part of Udacity Self Driving course.
+### This is a project write up for finding lanes on the road as a part of Udacity Self Driving course.
 
 ---
 
@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 ### 1. Pipeline
 
-My pipeline consisted of following steps.
+The process pipeline consisted of following steps.
 
 
 1. Convert to grayscale
