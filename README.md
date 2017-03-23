@@ -96,4 +96,4 @@ Another shortcoming could be ...
 
 * The top coordinates for lane marking can be made more smoother by averaging past coordinates.
 * Further tuning of Hough Transform parameters.
-* Code optimization/Layout/refractoring.
+* Code optimization and refractoring.
